@@ -1,0 +1,103 @@
+%Define document class:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt,a4paper,oneside]{book}
+
+%Include the required packages to be used in the document:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[top=4cm,right=2.5cm,bottom=2.5cm,left=2.5cm]{geometry}
+% \usepackage[headings]{fullpage}
+\usepackage{setspace}
+\usepackage{graphicx,wrapfig,lipsum}
+\usepackage{float}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{appendix}
+\usepackage[pdfborder={0 0 0}, colorlinks=true, linkcolor=black, citecolor=blue, urlcolor= black]{hyperref}
+\usepackage[printonlyused]{acronym}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{ifpdf}
+\usepackage{parskip}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{subcaption}
+\usepackage{times}
+\usepackage{pdflscape}
+\usepackage{afterpage}
+\usepackage{multirow}
+%\usepackage[square, numbers, comma, sort&compress]{natbib}
+%\usepackage{notoccite}
+%\usepackage{subfig}
+%\usepackage{xtab}
+%\usepackage{accents}
+%\usepackage[backend=bibtex]{biblatex}
+%\usepackage{rotating}
+%\usepackage{tabularx}
+%\usepackage{capt-of}% or use the larger `caption` package
+%\usepackage{longtable}
+%\usepackage{fancyhdr}
+%\setlength{\headheight}{20pt} 
+%\usepackage{graphics}
+%\usepackage{epstopdf}
+
+
+
+% \include{Sections/01_class_and_packages}
+% \include{Sections/02_new_commands}
+\include{Sections/03_Authors_info} %change your info
+\begin{document}
+\include{Sections/04_titlepage} %change number of supervisors, Date
+% \include{Sections/05_list_publications}
+% \include{Sections/06_funny_quote}
+\include{Sections/07_declaration} %change degree
+\include{Sections/08_acknowledgments}
+\include{Sections/09_abstract}
+\include{Sections/10_toc_figures_tables}
+% \include{Sections/11_dedication}
+
+\pagestyle{headings}
+\pagenumbering{arabic}
+%include chapters in the following part:
+%========================================
+\include{chapters/introduction}
+\include{chapters/background}
+\include{chapters/Methodology}
+\include{chapters/results}
+\include{chapters/conclusion}
+% \include{chapters/future_work}
+
+
+
+
+
+
+
+
+
+%Add the appendix here:
+%==========================
+% \include{chapters/appendix}     
+
+\pagebreak
+%Add the bibliography here:
+%=============================
+\begin{thebibliography}{00}
+\bibitem{pid} Emirler, Mümin Tolga, et al. "Robust PID steering control in Parameter Space for highly automated driving." International Journal of Vehicular Technology 2014 (2014).
+\bibitem{mpc} Rafaila, Razvan C., Constantin F. Caruntu, and Gheorghe Livint. "Nonlinear model predictive control using Lyapunov functions for vehicle lateral dynamics." IFAC-PapersOnLine 49.3 (2016): 135-140.
+\bibitem{nvidia} Bojarski, Mariusz, et al. "End to end learning for self-driving cars." arXiv preprint arXiv:1604.07316 (2016).
+\bibitem{nvidia_activ} Bojarski, Mariusz, et al. "Explaining how a deep neural network trained with end-to-end learning steers a car." arXiv preprint arXiv:1704.07911 (2017).
+\bibitem{visualbackprop} Bojarski, Mariusz, et al. "VisualBackProp: efficient visualization of CNNs." arXiv preprint arXiv:1611.05418 (2016).
+\bibitem{alvinn} Pomerleau, Dean A. "Alvinn: An autonomous land vehicle in a neural network." Advances in neural information processing systems. 1989.
+\bibitem{dave} LeCun, Y., et al. DAVE: Autonomous off-road vehicle control using end-to-end learning. Technical Report DARPA-IPTO Final Report, Courant Institute/CBLL, http://www. cs. nyu. edu/yann/research/dave/index. html, 2004.
+\bibitem{viz} Zeiler, Matthew D., and Rob Fergus. "Visualizing and understanding convolutional networks." European conference on computer vision. Springer, Cham, 2014.
+\bibitem{ipopt} Wächter, Andreas, and Lorenz T. Biegler. "On the implementation of an interior-point filter line-search algorithm for large-scale nonlinear programming." Mathematical programming 106.1 (2006): 25-57.
+\bibitem{adam} Kingma, Diederik P., and Jimmy Ba. "Adam: A method for stochastic optimization." arXiv preprint arXiv:1412.6980 (2014).
+\bibitem{kitti} Geiger, Andreas, et al. "Vision meets robotics: The KITTI dataset." The International Journal of Robotics Research 32.11 (2013): 1231-1237.
+\bibitem{kitti_road} Fritsch, Jannik, Tobias Kuhnl, and Andreas Geiger. "A new performance measure and evaluation benchmark for road detection algorithms." Intelligent Transportation Systems-(ITSC), 2013 16th International IEEE Conference on. IEEE, 2013.
+\bibitem{gti} Arróspide, Jon, Luis Salgado, and Marcos Nieto. "Video analysis-based vehicle detection and tracking using an mcmc sampling framework." EURASIP Journal on Advances in Signal Processing 2012.1 (2012): 2.
+\bibitem{backprop} Baydin, Atilim Gunes, et al. "Automatic differentiation in machine learning: a survey." arXiv preprint arXiv:1502.05767 (2015).
+\bibitem{vgg} Simonyan, Karen, and Andrew Zisserman. "Very deep convolutional networks for large-scale image recognition." arXiv preprint arXiv:1409.1556 (2014).
+\end{thebibliography}
+
+\end{document}
